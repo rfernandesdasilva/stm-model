@@ -8,7 +8,7 @@ Using Keras from Tensorflow library, this repository includes the dataset genera
 
 # Model training and prediction
 The current Dataset layout needs to look like this folder architecture:
-dataset/
+```dataset/
 ├── test/
 │   ├── Cylinder/
 │   ├── Cone/
@@ -26,4 +26,4 @@ dataset/
      ├── Cone/
      ├── Cube/
      ├── Pyramid/
-     └── Sphere/
+     └── Sphere/```
