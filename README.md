@@ -8,6 +8,7 @@ Using Keras from Tensorflow library, this repository includes the dataset genera
 
 # Model training and prediction
 Currently using our dataset as training data, adding a layer of pre-trained imagenet.
+TODO: More information and detailed documentation.
 The current Dataset layout needs to look like this folder architecture:
 ```dataset/
 ├── test/
