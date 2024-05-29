@@ -7,6 +7,7 @@ Using Keras from Tensorflow library, this repository includes the dataset genera
 - Future improvements would be generating a bigger dataset with more angle variations, and not having the object always centralized in the render.
 
 # Model training and prediction
+Currently using our dataset as training data, adding a layer of pre-trained imagenet.
 The current Dataset layout needs to look like this folder architecture:
 ```dataset/
 ├── test/
