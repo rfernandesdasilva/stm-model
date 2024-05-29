@@ -14,7 +14,7 @@ model = load_model(model_save_path)
 class_indices_path = os.path.join(model_save_dir, 'class_indices.json')
 with open(class_indices_path, 'r') as f:
     class_indices = json.load(f)
-class_indices = {v: k for k, v in class_indices.items()}  # Reverse the class indices dictionary
+class_indices = {v: k for k, v in class_indices.items()}  # reverse the class indices dictionary
 
 def predict_image(image_path):
     img_width, img_height = 224, 224  # this is needed because the model was trained to analyze images of this dimension
