@@ -8,21 +8,24 @@ from tensorflow.keras.applications import VGG16
 
 # setting up enviroment to speed up epoch learning
 # took me ages without this, changed so i would use 100% of my cpu. need to be careful with this tho, not all cpus have 20 threads and 10 cores
-os.environ["OMP_NUM_THREADS"] = "20"  # number of threads should be equal to the number of logical processors
-os.environ["TF_NUM_INTRAOP_THREADS"] = "20"
-os.environ["TF_NUM_INTEROP_THREADS"] = "2"  # typically set this to 2 or the number of physical cores
+# DO NOT UNCOMMENT THIS UNLESS YOU KNOW YOUR CPU CONFIGURATION.
+
+# os.environ["OMP_NUM_THREADS"] = "20"  # number of threads should be equal to the number of logical processors
+# os.environ["TF_NUM_INTRAOP_THREADS"] = "20"
+# os.environ["TF_NUM_INTEROP_THREADS"] = "2"  # typically set this to 2 or the number of physical cores
 
 # configure TensorFlow to use multiple cores
-tf.config.threading.set_intra_op_parallelism_threads(20)
-tf.config.threading.set_inter_op_parallelism_threads(2)
+# tf.config.threading.set_intra_op_parallelism_threads(20)
+# tf.config.threading.set_inter_op_parallelism_threads(2)
 
+# replace placeholds with your directories
 train_dir = r"ADD-DIR-HERE"
 validation_dir = r"ADD-DIR-HERE"
 test_dir = r"ADD-DIR-HERE"
-
 model_save_dir = r"ADD-DIR-HERE"
+
 os.makedirs(model_save_dir, exist_ok=True)
-version = 1.0
+version = 1.0 # version control
 model_save_path = os.path.join(model_save_dir, f'stm-v.{version}.keras')
 
 # image data generators with augmentation for training set
