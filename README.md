@@ -27,4 +27,4 @@ The current Dataset layout needs to look like this folder architecture:
      ├── Cone/
      ├── Cube/
      ├── Pyramid/
-     └── Sphere/```
+     └── Sphere/
