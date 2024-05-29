@@ -20,7 +20,6 @@ def add_pyramid(size=1, location=(0, 0, 0)):
 
 amount_of_renders_angle = 40  # 40 angles per size currently. 3 sizes total
 
-# List of objects to create
 def create_geometric_objects():
     sizes = [1, 2, 3]
     shapes_info = [
