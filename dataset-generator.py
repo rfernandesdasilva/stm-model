@@ -89,7 +89,7 @@ def generate_unique_random_angles(num_angles=40):  # should be 40 baseline
     return list(angles)
 
 # points camera to object
-# would like to add a bit of variation here further on
+# TODO: would like to add a bit of variation here further on
 def point_camera_to_object(obj):
     direction = obj.location - cam.location
     rot_quat = direction.to_track_quat('-Z', 'Y')
