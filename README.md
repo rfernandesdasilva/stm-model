@@ -1,5 +1,5 @@
 # stm-model
-StM-AI model development.
+StM-AI model early stages of development.
 Using Keras from Tensorflow library, this repository includes the dataset generator currently in use, a prediction file and a model training file.
 
 # Dataset Generator
